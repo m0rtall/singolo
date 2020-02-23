@@ -1,0 +1,248 @@
+@font-face {
+    font-family: "Lato Black";
+    src: url("assets/fonts/Lato-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url("assets/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("assets/fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("assets/fonts/Lato-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", "Arial", sans-serif;
+}
+
+.main {
+    min-width: 1020px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1020px;
+}
+
+.header {
+    min-width: 1020px;
+    border-bottom: 6px solid #323746;
+    background-color: #2d303a;
+
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: "Lato Bold";
+    margin: 34px 0 35px 40px;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.475px;
+}
+
+.logo::after {
+    color: #f06c64;
+    content: "*";
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin-top: 45px;
+    margin-right: 40px;
+}
+
+.navbar__item {
+    position: relative;
+    line-height: 0;
+}
+
+.navbar__item a {
+    font-family: "Lato Bold";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    color: #ffffff;
+
+
+}
+
+.navbar__item a:hover {
+    color: #f06c64;
+}
+
+.navbar__item:nth-child(2) {
+    margin-left: 30px;
+    letter-spacing: -0.168px;
+}
+
+.navbar__item:nth-child(5) {
+    letter-spacing: -0.19px;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 29px;
+}
+
+.navbar__item + .navbar__item::before {
+    position: absolute;
+    left: -16px;
+    color: #494e62;
+    content: ".";
+}
+
+.slider {
+    background-color: #f06c64;
+}
+
+.slider__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 53px 0;
+}
+
+.arrow-left {
+    margin-left: 42px;
+    background: url("assets/images/left_arr.png") no-repeat 0 0;
+}
+
+.arrow-right {
+    margin-left: 55px;
+    background: url("assets/images/right_arr.png") no-repeat 0 0;
+}
+
+.arrow-left,
+.arrow-right {
+    width: 16px;
+    height: 27px;
+    margin-bottom: 11px;
+    cursor: pointer;
+    border: none;
+    transition: filter 0.3s;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.5)) contrast(140%);
+}
+
+.phone-one {
+    margin-bottom: 11px;
+    margin-left: 53px;
+}
+
+.phone-two {
+    margin-bottom: 12px;
+    margin-left: 73px;
+}
+
+.services {
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+
+.services__wrapper {
+    padding: 69px 0 30px 0;
+}
+
+.services__title {
+    font-family: "Lato Black";
+    margin: 0 0 0 40px;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 17px;
+    color: #666d89;
+    letter-spacing: -0.18px;
+}
+
+.services__text {
+    font-family: Lato-Light;
+    margin: 27px 40px 0 40px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #767e9e;
+    text-align: justify;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 41px;
+    margin: 45px 0 0 40px;
+}
+
+.services-list__item {
+    display: flex;
+    max-width: 300px;
+    margin-bottom: 32px;
+}
+
+.service {
+    margin: 0 0 0 19px;
+}
+
+.service__title {
+    font-family: "Lato Black";
+    margin: 0;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 17px;
+    color: #666d89;
+    letter-spacing: -0.09px;
+}
+
+.service__text {
+    height: 63px;
+    font-family: "Lato-Regular";
+    margin: 11px 0 0 0;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #767e9e;
+    text-align: justify;
+}
+
+.services-list__item:nth-child(3) .service,
+.services-list__item:nth-child(6) .service {
+    margin-left: 19px;
+}
+
+.services-list__item:nth-child(3) .service__title,
+.services-list__item:nth-child(6) .service__title {
+    margin-left: 2px;
+}
+
+.icon {
+    margin-bottom: 10px;
+    margin-left: 2px;
+
+}
