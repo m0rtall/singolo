@@ -11,159 +11,108 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="wrapper header__wrapper">
-        <h1 class="logo">singolo</h1>
-        <nav>
-            <ul class="navbar">
-                <li class="navbar__item"><a href="#">home</a></li>
-                <li class="navbar__item"><a href="#">services</a></li>
-                <li class="navbar__item"><a href="#">portfolio</a></li>
-                <li class="navbar__item"><a href="#">about</a></li>
-                <li class="navbar__item"><a href="#">contact</a></li>
+<header>
+    <div class="wrapper flex">
+        <div class="logo">
+            <h1>SINGOLO<span>*</span></h1>
+        </div>
+        <nav class="navbar_head">
+            <ul>
+                <li><a href="#"><span>HOME</span></a></li>
+                <li class="content"><a href="#">SERVICES</a></li>
+                <li class="content"><a href="#">PORTFOLIO</a></li>
+                <li class="content"><a href="#">ABOUT</a></li>
+                <li class="content"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<main class="main">
+<main>
     <section class="slider">
-        <div class="wrapper slider__wrapper">
-            <button class="arrow-left"></button>
-            <img
-                    class="phone-one"
-                    src="assets/images/vertical_iph.png"
-                    alt="vertical"
-                    width="241"
-                    height="483"
-            />
-            <img
-                    class="phone-two"
-                    src="assets/images/horizontal_iph.png"
-                    alt="horizontal"
-                    width="484"
-                    height="240"
-            />
-            <button class="arrow-right"></button>
+        <div class="wrapper flex">
+            <figure>
+                <img class="chev_left" src="assets/images/chev-left.png" alt="to the previous slide">
+                <img class="iphone1" src="assets/images/iphone_vertical.png" alt="vertical image of the iPhone">
+                <img class="iphone2" src="assets/images/iphone_horizontal.png" alt="horizontal image of the iPhone">
+                <img class="chev_right" src="assets/images/chev-right.png" alt="to the next slide">
+            </figure>
         </div>
     </section>
-    <section class="services">
-        <div class="wrapper services__wrapper">
-            <h2 class="services__title">Our Services</h2>
-            <p class="services__text">
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-                lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                tortor mauris condimentum nibh.
+    <section class="Our_Services">
+        <div class="wrapper">
+            <h1 class="headings">Our Services</h1>
+            <p class="Fusce_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+                Duis mollis, non commodo luctus, nisi erat porttitor
+                ligula, eget lacinia odio sem nec elit.
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
             </p>
-            <div class="services-list">
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/pen.png"
-                            alt="pen"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">Custom Design</h3>
-                        <p class="service__text">
-                            Curabitur vestibulum eget mauris quis laoreet. Phasellus in
-                            quam laoreet, viverra lacus ut, ultrices velit.
-                        </p>
-                    </article>
+            <div class="container_services">
+                <div class="icons">
+                    <img src="assets/images/Pen.png" alt="pen icon">
                 </div>
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/light.png"
-                            alt="light"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">Inovative Ideas</h3>
-                        <p class="service__text">
-                            Quisque luctus, quam eget molestie com&shy;modo, lacus purus
-                            cursus purus, nec rutrum tellus dolor id lorem.
-                        </p>
-                    </article>
+                <div>
+                    <h2 class="service_header">Custom Design</h2>
+                    <p class="text_grid">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet,
+                        viverra lacus
+                        ut, ultrices velit.</p>
                 </div>
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/heart.png"
-                            alt="heart"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">Love Is The Answer</h3>
-                        <p class="service__text">
-                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                            turpis, et consequat felis. Quisque condimentum.
-                        </p>
-                    </article>
+                <div class="icons">
+                    <img src="assets/images/Bulb.png" alt="bulb icon">
                 </div>
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/phone.png"
-                            alt="phone"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">Responsive Layout</h3>
-                        <p class="service__text">
-                            Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-                            blandit nunc ligula. Prae&shy;sent elit leo.
-                        </p>
-                    </article>
+                <div>
+                    <h2 class="service_header">Inovative Ideas</h2>
+                    <p class="text_grid">Quisque luctus, quam eget molestie com- modo, lacus purus cursus purus, nec
+                        rutrum
+                        tellus dolor id lorem.</p>
                 </div>
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/cloud.png"
-                            alt="cloud"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">24 / 7 Support</h3>
-                        <p class="service__text">
-                            Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
-                            Nulla a sem erat. Pellen&shy;tesque egestas venenatis lorem .
-                        </p>
-                    </article>
+                <div class="icons star_heart">
+                    <img src="assets/images/Heart.png" alt="heart icon">
                 </div>
-                <div class="services-list__item">
-                    <img
-                            class="icon"
-                            src="assets/images/star.png"
-                            alt="star"
-                            width="59"
-                            height="59"
-                    />
-                    <article class="service">
-                        <h3 class="service__title">Feel Like A Star</h3>
-                        <p class="service__text">
-                            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
-                            nibh. Fusce vitae aliquam tellus.
-                        </p>
-                    </article>
+                <div>
+                    <h2 class="service_header additionally">Love Is The Answer</h2>
+                    <p class="text_grid">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+                        consequat felis.
+                        Quisque condimentum.</p>
+                </div>
+                <div class="icons">
+                    <img src="assets/images/Phone.png" alt="phone icon">
+                </div>
+                <div>
+                    <h2 class="service_header">Responsive Layout</h2>
+                    <p class="text_grid">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc
+                        ligula. Prae-
+                        sent elit leo.</p>
+                </div>
+                <div class="icons">
+                    <img src="assets/images/Bubble.png" alt="bubble icon">
+                </div>
+                <div>
+                    <h2 class="service_header">24 / 7 Support</h2>
+                    <p class="text_grid">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem
+                        erat. Pellen-
+                        tesque egestas venenatis lorem .</p>
+                </div>
+                <div class="icons star_heart">
+                    <img src="assets/images/Star.png" alt="star icon">
+                </div>
+                <div>
+                    <h2 class="service_header additionally">Feel Like A Star</h2>
+                    <p class="text_grid">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce
+                        vitae aliquam
+                        tellus.</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="portfolio">
         <div class="wrapper">
-            <h1>Portfolio</h1>
-            <p>
+            <h1 class="headings">Portfolio</h1>
+            <p class="portfolio_text">
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
                 eget lacinia odio sem nec elit.
             </p>
-            <nav class="navbar">
-                <ul>
+            <nav class="navigation_bar">
+                <ul class="navbar_buttons">
                     <li>
                         <p class="buttons b1">All</p>
                     </li>
@@ -178,8 +127,7 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="container">
+            <div class="container_portfolio">
                 <div>
                     <img src="assets/images/ship.png" alt="ship picture">
                 </div>
@@ -218,18 +166,17 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="about_us">
         <div class="wrapper">
-            <h1>About Us</h1>
-            <p>
+            <h1 class="headings">About Us</h1>
+            <p class="Fusce_text">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
                 lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
                 tortor mauris condimentum nibh.
             </p>
-            <div class="container photo">
+            <div class="container_photo">
                 <div>
                     <img src="assets/images/adam.png" alt="Adam photo">
                 </div>
@@ -240,7 +187,7 @@
                     <img src="assets/images/scolara.png" alt="Scolara photo">
                 </div>
                 <div>
-                    <h2>
+                    <h2 class="Name">
                         Adam Jensen
                     </h2>
                     <p class="text Adam">
@@ -253,7 +200,7 @@
                     <img class="social" src="assets/images/linkedIn.png" alt="linkedIn icon">
                 </div>
                 <div>
-                    <h2>
+                    <h2 class="Name">
                         Desmond Miles
                     </h2>
                     <p class="text Desmond">
@@ -266,7 +213,7 @@
                     <img class="social" src="assets/images/linkedIn.png" alt="linkedIn icon">
                 </div>
                 <div>
-                    <h2 class="scolara_h2">
+                    <h2 class="Name">
                         Scolara Visari
                     </h2>
                     <p class="text Scolara">
@@ -281,12 +228,12 @@
             </div>
         </div>
     </section>
-    <section class="quote">
+    <section class="Get_a_quote">
         <div class="wrapper">
-            <h1>
+            <h1 class="headings h1_quote">
                 Get a Quote
             </h1>
-            <p class="quote_text">
+            <p class="Fusce_text quote">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
                 lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
@@ -294,23 +241,24 @@
             </p>
             <div class="flex_content">
                 <form>
-                    <input name="name" type="text" placeholder="Name (Required)" id="name" required>
-                    <input name="email" type="email" placeholder="Email (Required)" id="email" required>
+                    <input name="name" type="text" placeholder="Name (Required)" id="name" required
+                           pattern="^[a-zA-Zа-яА-ЯёЁ]+ [a-zA-Zа-яА-ЯёЁ]+$">
+                    <input name="email" type="email" placeholder="Email (Required)" id="email" required
+                           pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$">
                     <input name="subject" type="text" placeholder="Subject" id="subject">
                     <textarea name="textarea" placeholder="Describe your project in detail..." id="project"
                               cols="30" rows="10"></textarea>
                     <button type="submit">Submit</button>
                 </form>
                 <div class="information">
-                    <h3>Contact Information</h3>
+                    <h3 class="heading_contact">Contact Information</h3>
                     <p class="information_text">
-                        Quisque hendrerit purus dapibus, ornare nibh vitae,viver- ra nibh.
+                        Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh.
                         Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
                         sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
                         consequat felis.
                     </p>
-
-                    <div class="container">
+                    <div class="container_information">
                         <div>
                             <img class="location" src="assets/images/location.png" alt="location icon">
                         </div>
@@ -336,20 +284,20 @@
             </div>
         </div>
     </section>
-</main>
-<footer class="footer">
-    <div class="wrapper footer">
-        <p>
-            © Copyright 2013
-        </p>
-        <div class="social_footer">
-            <img class="social" src="assets/images/facebook.png" alt="facebook icon">
-            <img class="social" src="assets/images/google.png" alt="google icon">
-            <img class="social" src="assets/images/twitter.png" alt="twitter icon">
-            <img class="social" src="assets/images/linkedIn.png" alt="linkedIn icon">
+    <footer class="footer">
+        <div class="wrapper flex">
+            <p class="copyright">
+                © Copyright 2013
+            </p>
+            <div class="social_footer">
+                <img class="social_f" src="assets/images/facebook.png" alt="facebook icon">
+                <img class="social_f" src="assets/images/google.png" alt="google icon">
+                <img class="social_f" src="assets/images/twitter.png" alt="twitter icon">
+                <img class="social_f" src="assets/images/linkedIn.png" alt="linkedIn icon">
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</main>
 </body>
 
 </html>
